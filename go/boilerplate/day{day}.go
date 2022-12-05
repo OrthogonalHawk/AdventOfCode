@@ -19,7 +19,6 @@ func Part2(input string) int {
 	// input = strings.TrimSuffix(input, "\n")
 	// lines := strings.Split(input, "\n")
 	return 0
-
 }
 
 func main() {

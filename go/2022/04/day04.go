@@ -74,7 +74,7 @@ func Part2(input string) int {
 }
 
 func main() {
-	fmt.Println("--{year} day {day} solution--")
+	fmt.Println("--{2022} day {04} solution--")
 	start := time.Now()
 	fmt.Println("part1: ", Part1(input_day))
 	fmt.Println(time.Since(start))
