@@ -19,3 +19,4 @@ include_directories(hdr)
 # Create executables for different days
 add_day_executable(day00)
 add_day_executable(day01)
+add_day_executable(day02)
