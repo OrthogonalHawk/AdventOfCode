@@ -156,7 +156,7 @@ int main(int argc, char *argv[])
     std::vector<std::string> parsed_example01_strs = parse_input_file_into_lines(example01_data_file_path);
     std::vector<std::string> puzzle_input_strs = parse_input_file_into_lines(puzzle_data_file_path);
 
-    std::cout << "########## Day01 Example 01 ##########" << std::endl;
+    std::cout << "########## Day02 Example 01 ##########" << std::endl;
 
     auto example_01_game_params = parse_game_data(parsed_example01_strs);
     auto example_01_possible_game_ids_given_limits = eval_possible_games_given_limits(example_01_game_params, 12, 14, 13);
@@ -167,14 +167,14 @@ int main(int argc, char *argv[])
     auto example_01_color_power_sum = calculate_min_color_power_sum(example_01_min_colors_for_possible_game);
     std::cout << "Color Power Sum: " << example_01_color_power_sum << std::endl;
 
-    std::cout << "########## Day01 Part 1 ###########" << std::endl;
+    std::cout << "########## Day02 Part 1 ###########" << std::endl;
 
     auto part_01_game_params = parse_game_data(puzzle_input_strs);
     auto part_01_possible_game_ids = eval_possible_games_given_limits(part_01_game_params, 12, 14, 13);
     auto part_01_game_id_sum = std::accumulate(part_01_possible_game_ids.begin(), part_01_possible_game_ids.end(), 0);
     std::cout << "Possible Game Id Sum: " << part_01_game_id_sum << std::endl;
 
-    std::cout << "########## Day01 Part 2 ###########" << std::endl;
+    std::cout << "########## Day02 Part 2 ###########" << std::endl;
     auto part_02_min_colors_for_possible_game = find_min_colors_for_possible_game(part_01_game_params);
     auto part_02_color_power_sum = calculate_min_color_power_sum(part_02_min_colors_for_possible_game);
     std::cout << "Color Power Sum: " << part_02_color_power_sum << std::endl;
