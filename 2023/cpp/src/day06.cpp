@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
     std::cout << "########## Day06 Part 01 #############" << std::endl;
 
     auto part01_races = parseInputFile(puzzle_data_file_path);
-    int64_t part01_accum = 1;
+    int64_t part01_accum = 1; 
 
     for (const auto& race : part01_races)
     {
